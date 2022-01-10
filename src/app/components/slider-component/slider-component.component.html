@@ -1,0 +1,13 @@
+<div class="range">
+    <div class="sliderValue">
+        <span  >{{value}}</span>
+    </div>
+    <div class="field">
+        <label for="rangeInput"class="form-label"> {{titleName}} </label>
+        <div class="sliderContainer">
+            <input class="form-control" (input)="inputNumber()" id="rangeInput" type="range" min="0" max="200" step="1" [(ngModel)]="rangeInput">
+            <div class="value right">{{rangeInput}}</div>
+        </div>
+        
+    </div>
+</div>
